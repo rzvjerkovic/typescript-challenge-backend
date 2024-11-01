@@ -23,9 +23,12 @@
   },
   "dependencies": {
     "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
     "express": "^4.21.0",
     "morgan": "^1.10.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "uuid": "^11.0.2",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",

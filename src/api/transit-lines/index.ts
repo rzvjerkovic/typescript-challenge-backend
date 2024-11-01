@@ -1,8 +1,9 @@
 import { Router } from 'express'
-import { getLine } from './get-line'
+import { getLine, getLines } from './get-line'
+import { addStop } from './add-stop'
 
 export const transitLinesRouter = Router()
 
+transitLinesRouter.get('/all', getLines)
 transitLinesRouter.get('/:lineId', getLine)
-
-// TODO add CRUD methods
+transitLinesRouter.post('/:lineId/add-stop', addStop)
